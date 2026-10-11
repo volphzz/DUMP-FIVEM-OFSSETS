@@ -1,0 +1,15 @@
+Vxz F-DUMPER
+
+Abra Iniciar.cmd com o FiveM em execucao. O programa espera o processo do jogo e exporta para exports.
+Projeto C++20: src/Vxz F-DUMPER.vcxproj; configuracao Release x64, Visual Studio 2022.
+Nao escreve na memoria do jogo. Leitura por paginas, assinaturas unicas, resolucao RIP e validacao de limites.
+Formatos: JSON, C++, C#, Rust e Cheat Engine. scan-report.csv inclui todos os resultados.
+Os valores sao RVAs (somar a base do modulo), nao necessariamente deslocamentos de campos de estruturas.
+Correspondencia de assinatura nao comprova a semantica do endereco. Resultados nao encontrados ou ambiguos nao sao exportados.
+Assinaturas herdadas do projeto fornecido; compatibilidade universal nao foi comprovada.
+Validacao real: processo FiveM_b3258_GTAProcess, build 3258. Veja validation.log.
+Autoteste: bin/"Vxz F-DUMPER.exe" --self-test.
+
+Revisao: diagnostico separado em missing_signature (24), ambiguous_signature (9), matched_unverified (39).
+A busca agora considera somente secoes executaveis do PE. O CSV informa a contagem minima de correspondencias (2 significa duas ou mais).
+Os 33 itens pendentes exigem revisao de assinaturas/engenharia reversa para o build atual. Nenhum valor foi inventado ou selecionado arbitrariamente.

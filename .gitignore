@@ -1,0 +1,18 @@
+# Local build products
+/build/
+/bin/*.pdb
+/bin/*.ilk
+/bin/*.obj
+/bin/*.pch
+
+# Generated scans and exports
+/exports/*
+!/exports/.gitkeep
+/scan-report.csv
+/validation.log
+/*.zip
+
+# IDE/user files
+*.user
+*.suo
+.vs/
